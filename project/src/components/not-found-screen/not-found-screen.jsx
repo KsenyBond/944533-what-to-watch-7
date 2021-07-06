@@ -1,4 +1,6 @@
 import React from 'react';
+import AppRoute from '../../const';
+
 import {Link} from 'react-router-dom';
 import Logo from '../logo/logo';
 
@@ -11,11 +13,11 @@ function NotFoundScreen() {
 
       <section className="not-found__screen">
         <h1>404. Page not found</h1>
-        <Link to="/">Вернуться на главную</Link>
+        <Link to={AppRoute.MAIN}>Вернуться на главную</Link>
       </section>
 
       <footer className="page-footer">
-        <Logo isFooterLogo={true} />
+        <Logo isFooterLogo />
 
         <div className="copyright">
           <p>© 2019 What to watch Ltd.</p>

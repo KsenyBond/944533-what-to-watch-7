@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Logo from '../logo/logo';
 
 function SignInScreen() {
@@ -33,7 +34,7 @@ function SignInScreen() {
       </div>
 
       <footer className="page-footer">
-        <Logo isFooterLogo={true} />
+        <Logo isFooterLogo />
 
         <div className="copyright">
           <p>© 2019 What to watch Ltd.</p>

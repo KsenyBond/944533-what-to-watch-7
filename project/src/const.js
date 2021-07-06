@@ -1,4 +1,4 @@
-export const AppRoute = {
+const AppRoute = {
   MAIN: '/',
   SIGN_IN: '/login',
   MY_LIST: '/mylist',
@@ -6,3 +6,5 @@ export const AppRoute = {
   ADD_REVIEW: '/films/:id/review',
   PLAYER: '/player/:id',
 };
+
+export default AppRoute;

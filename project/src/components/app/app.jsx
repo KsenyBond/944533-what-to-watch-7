@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Switch, Route, BrowserRouter} from 'react-router-dom';
+import AppRoute from '../../const';
 
 import MainPage from '../main-screen/main-screen';
 import SignInScreen from '../sign-in-screen/sign-in-screen';
@@ -9,7 +10,6 @@ import FilmScreen from '../film-screen/film-screen';
 import AddReviewScreen from '../add-review-screen/add-review-screen';
 import PlayerScreen from '../player-screen/player-screen';
 import NotFoundScreen from '../not-found-screen/not-found-screen';
-import {AppRoute} from '../../const';
 
 function App(props) {
   const {filmsList, headerFilmTitle, headerFilmGenre, headerFilmYear} = props;

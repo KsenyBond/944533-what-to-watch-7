@@ -1,7 +1,8 @@
 import React from 'react';
-import FilmCard from '../film-card/film-card';
-import Logo from "../logo/logo";
 import PropTypes from 'prop-types';
+
+import FilmCard from '../film-card/film-card';
+import Logo from '../logo/logo';
 
 function MainScreen(props) {
   const {filmsList, headerFilmTitle, headerFilmGenre, headerFilmYear} = props;
@@ -109,7 +110,7 @@ function MainScreen(props) {
         </section>
 
         <footer className="page-footer">
-          <Logo isFooterLogo={true} />
+          <Logo isFooterLogo />
 
           <div className="copyright">
             <p>© 2019 What to watch Ltd.</p>
