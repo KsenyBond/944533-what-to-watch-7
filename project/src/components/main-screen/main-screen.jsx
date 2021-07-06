@@ -1,8 +1,10 @@
 import React from 'react';
-import FilmCard from '../film-card/film-card';
 import PropTypes from 'prop-types';
 
-function MainPage(props) {
+import FilmCard from '../film-card/film-card';
+import Logo from '../logo/logo';
+
+function MainScreen(props) {
   const {filmsList, headerFilmTitle, headerFilmGenre, headerFilmYear} = props;
 
   return (
@@ -15,13 +17,7 @@ function MainPage(props) {
         <h1 className="visually-hidden">WTW</h1>
 
         <header className="page-header film-card__head">
-          <div className="logo">
-            <a className="logo__link">
-              <span className="logo__letter logo__letter--1">W</span>
-              <span className="logo__letter logo__letter--2">T</span>
-              <span className="logo__letter logo__letter--3">W</span>
-            </a>
-          </div>
+          <Logo />
 
           <ul className="user-block">
             <li className="user-block__item">
@@ -114,13 +110,7 @@ function MainPage(props) {
         </section>
 
         <footer className="page-footer">
-          <div className="logo">
-            <a className="logo__link logo__link--light">
-              <span className="logo__letter logo__letter--1">W</span>
-              <span className="logo__letter logo__letter--2">T</span>
-              <span className="logo__letter logo__letter--3">W</span>
-            </a>
-          </div>
+          <Logo isFooterLogo />
 
           <div className="copyright">
             <p>© 2019 What to watch Ltd.</p>
@@ -131,11 +121,11 @@ function MainPage(props) {
   );
 }
 
-MainPage.propTypes = {
-  filmsList: PropTypes.string.isRequired,
+MainScreen.propTypes = {
+  filmsList: PropTypes.array.isRequired,
   headerFilmTitle: PropTypes.string.isRequired,
   headerFilmGenre: PropTypes.string.isRequired,
   headerFilmYear: PropTypes.string.isRequired,
 };
 
-export default MainPage;
+export default MainScreen;
